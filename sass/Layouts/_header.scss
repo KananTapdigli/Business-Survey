@@ -1,0 +1,60 @@
+header {
+    top: 0;
+    z-index: 99;
+
+    .logo-container {
+        width: 200px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .temp-logo {
+        font-size: 35px;
+        position: relative;
+        top: -3px;
+        color: $black-color;
+    }
+
+    .bar {
+        font-size: 20px;
+        padding: 27px 0;
+        position: relative;
+        top: -3px;
+    }
+
+    .menu {
+        .menu-item {
+            padding: 25px;
+            transition: .3s all linear;
+            color: $black-color;
+
+            &:hover {
+                background-color: $main-hover-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    .sign-in,
+    .sign-up {
+        padding: 10px 35px;
+        background-color: $main-color;
+        color: $white-color;
+        transition: .3s all linear;
+
+        &:hover {
+            background-color: $main-hover-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        .menu-item {
+            padding: 25px 18px !important;
+        }
+    }
+}

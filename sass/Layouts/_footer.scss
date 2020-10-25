@@ -1,0 +1,25 @@
+footer{
+    padding: 50px 0;
+    background-color: $black-color;
+    color: $white-color;
+
+    .f-contact-text{
+        line-height: 2.2;
+    }
+
+    .arrow-right{
+        color: $main-color;
+    }
+
+    .footer-link{
+        cursor: pointer;
+        position: relative;
+        left: 0;
+        transition: .3s all linear;
+
+        &:hover{
+            left: 10px;
+            color: $main-color;
+        }
+    }
+}
